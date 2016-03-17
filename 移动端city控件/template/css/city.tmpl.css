@@ -1,0 +1,122 @@
+dd, dt, ul, li, body{
+    margin: 0;
+    padding: 0;
+}
+
+#citySelect{
+    max-width: 980px;
+    margin: 0 auto;
+}
+dd:hover{
+    cursor: pointer;
+    color: #1BA1BA;
+}
+
+body{  background: #F3F8FB; height:100%;margin-bottom: 100px;}
+li{
+    list-style: none;
+}
+.inputStyle{
+    width: 95%;
+    height: 33px;
+}
+.search{
+    text-align: center;
+    background: #1BA1BA;
+    padding: 5px;
+}
+
+.iCity-nav, ul{
+    width: 100%;
+    background: white;
+}
+.iCity-nav ul:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+.iCity-nav li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+
+}
+.iCity-nav li:hover{
+    color: #1BA1BA;
+    cursor: pointer;
+}
+.active{
+    border-bottom: 3px solid #1BA1BA;
+    color: #1BA1BA;
+}
+.showCity{
+    background: #F3F8FB;
+    width: 100%;
+
+}
+.showCity>div{
+    width: 95%;
+    margin: auto;
+}
+.showCity dt{
+    padding-bottom: 10px;
+}
+.historySearchCity dd, .hotCity dd{
+    display: inline-block;
+    background: white;
+    margin-bottom: 10px;
+    width: 84px;
+    text-align: center;
+    padding: 5px 0;
+}
+.showCityByLetter dl{
+    background: #F3F8FB;
+}
+.showCityByLetter dd{
+    background: white;
+    padding: 0 20px;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #d7dbde;
+}
+.currentPosition{
+    color: #1BA1BA;
+    background: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.right-position {
+
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 40px;
+    text-align: center;
+    height: 100%;
+}
+.right-position ul{
+    height: 100%;
+    width: 100%;
+    background: #F3F8FB;
+}
+.right-position li{
+    margin-top: 18px;
+}
+.right-position li a{
+    color: #1BA1BA;
+    text-decoration: none;
+
+}
+.iCity{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    max-width: 980px;
+}
+.h100{
+    height: 100px;
+}

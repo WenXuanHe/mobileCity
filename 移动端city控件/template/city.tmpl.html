@@ -1,0 +1,92 @@
+<div id="citySelect">
+    <div id="iCity" class="iCity">
+        <div class="search">
+            <input class="inputStyle" placeholder="北京/bj/beijing/pek/中国" type="text"/>
+            <input type="hidden" id="storeData" />
+        </div>
+        <div class="iCity-nav">
+            <ul>
+                <li class="active">国内</li>
+                <li>国际/港澳台</li>
+            </ul>
+        </div>
+    </div>
+    <div class="h100"></div>
+    <div class="showCity">
+        <div class="pos">
+            <dl>
+                <dt id="pos">定位</dt>
+                <dd class="currentPosition">点击获取位置</dd>
+            </dl>
+        </div>
+        <div class="historySearchCity">
+            <dl>
+                <dt id="his">历史</dt>
+                {{props #data}}
+                {{props prop}}
+                {{if prop[5]=='history' || prop[6]=='history'}}
+                <dd><span class="cityName" shortName="{{>prop[0]}}">{{>prop[1]}}</span></dd>
+                {{/if}}
+                {{/props}}
+                {{/props}}
+            </dl>
+        </div>
+        <div class="hotCity">
+            <dl>
+                <dt id="hot">热门城市</dt>
+                {{props #data}}
+                {{props prop}}
+                {{if prop[5]=='hot' || prop[6]=='hot'}}
+                <dd><span class="cityName" shortName="{{>prop[0]}}">{{>prop[1]}}</span></dd>
+                {{/if}}
+                {{/props}}
+                {{/props}}
+            </dl>
+        </div>
+        <div class="showCityByLetter">
+            <dl>
+                {{props #data}}
+                <dt class="charTitle" id="{{>key}}">{{>key}}</dt>
+                {{props prop}}
+                {{if key != "length"}}
+                <dd>
+                    <span class="cityName" shortName="{{>prop[0]}}">{{>prop[1]}}</span>
+                    <span class="shortCityName">{{>prop[0]}} </span>
+
+                </dd>
+                {{/if}}
+                {{/props}}
+                {{/props}}
+            </dl>
+        </div>
+    </div>
+    <div class="right-position">
+        <ul>
+            <li><a href="javascript:void(0);" class="pos">定位</a></li>
+            <li><a href="javascript:void(0);" class="his">历史</a></li>
+            <li><a href="javascript:void(0);" class="hot">热门</a></li>
+            <li><a href="javascript:void(0);" class="A">A</a></li>
+            <li><a href="javascript:void(0);" class="B">B</a></li>
+            <li><a href="javascript:void(0);" class="C">C</a></li>
+            <li><a href="javascript:void(0);" class="D">D</a></li>
+            <li><a href="javascript:void(0);" class="E">E</a></li>
+            <li><a href="javascript:void(0);" class="F">F</a></li>
+            <li><a href="javascript:void(0);" class="G">G</a></li>
+            <li><a href="javascript:void(0);" class="H">H</a></li>
+            <li><a href="javascript:void(0);" class="J">J</a></li>
+            <li><a href="javascript:void(0);" class="K">K</a></li>
+            <li><a href="javascript:void(0);" class="L">L</a></li>
+            <li><a href="javascript:void(0);" class="M">M</a></li>
+            <li><a href="javascript:void(0);" class="N">N</a></li>
+            <li><a href="javascript:void(0);" class="P">P</a></li>
+            <li><a href="javascript:void(0);" class="Q">Q</a></li>
+            <li><a href="javascript:void(0);" class="R">R</a></li>
+            <li><a href="javascript:void(0);" class="S">S</a></li>
+            <li><a href="javascript:void(0);" class="T">T</a></li>
+            <li><a href="javascript:void(0);" class="W">W</a></li>
+            <li><a href="javascript:void(0);" class="X">X</a></li>
+            <li><a href="javascript:void(0);" class="Y">Y</a></li>
+            <li><a href="javascript:void(0);" class="Z">Z</a></li>
+        </ul>
+    </div>
+</div>
